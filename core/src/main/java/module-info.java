@@ -8,4 +8,5 @@ open module bootfx.core {
     requires org.slf4j;
     exports com.johupe.bootfx;
     exports com.johupe.bootfx.config;
+    exports com.johupe.bootfx.dsl;
 }

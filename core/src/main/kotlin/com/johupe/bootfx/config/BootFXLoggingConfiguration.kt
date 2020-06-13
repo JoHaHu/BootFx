@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.Scope
 
-@ConditionalOnMissingBean( Logger::class )
+@ConditionalOnMissingBean(Logger::class)
 @Configuration
-class LoggingConfiguration {
+class BootFXLoggingConfiguration {
     @Bean
     @Scope("prototype")
     fun logger(injectionPoint: InjectionPoint): Logger {
